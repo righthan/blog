@@ -8,7 +8,7 @@ export default defineUserConfig({
   title: "Lee",
   description: "Lee's blog",
   
-  theme,
+  theme
 
   // Enable it with pwa
   // shouldPrefetch: false,
