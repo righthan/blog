@@ -11,7 +11,7 @@ export default navbar([
       {
         text: "学习小记",
         icon: "pen-to-square",
-        prefix: "学习小记/",
+        prefix: "notes/",
         children: [
           {
             text: "无法置空的引用",
