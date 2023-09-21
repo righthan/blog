@@ -16,7 +16,7 @@ export default navbar([
           {
             text: "无法置空的引用",
             icon: "pen-to-square",
-            link: "无法置空的引用",
+            link: "1",
           },
           // { text: "苹果2", icon: "pen-to-square", link: "2" },
           // "3",
