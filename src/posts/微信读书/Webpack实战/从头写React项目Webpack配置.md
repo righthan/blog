@@ -13,7 +13,7 @@ editLink: false
 comment: false
 ---
 
-# 从头开始写 React 和 vue 的 Webpack 配置
+# 从头开始写 React 项目的 Webpack 配置
 
 使用 Webpack 从头搭建一个 React 项目，包括下面的几个部分
 
