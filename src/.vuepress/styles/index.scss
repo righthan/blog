@@ -1,1 +1,8 @@
 // place your custom styles here
+// 修复首页文本中有一大段代码时展示全部内容导致首页内容过长
+.vp-article-excerpt {
+  [class^="language-"] {
+    max-height: 20vh;
+    overflow: auto;
+  }
+}
