@@ -1,3 +1,16 @@
+---
+title: 7700+modules项目迁移到Rsbuild
+tag:
+  - Webpack
+  - Rsbuild
+
+contributors: false
+editLink: false
+comment: false
+---
+
+
+
 # 7700+modules项目迁移到Rsbuild
 
 在学习了Webpack之后，了解到了字节开源的使用Rust编写的Rsbuild前端构建工具，便把手头的一个总共含有7700多个模块的Vue Cli构建的项目，迁移到Rsbuild，测试实际效果，浅浅尝试一番
