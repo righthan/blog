@@ -7,7 +7,7 @@
 直接在 Microsoft Store 安装 oh-my-posh，然后打开官网安步骤进行操作，步骤主要包括下载字体和字体配置，但是遇到的问题也很多
 
 1. 命令行无法下载字体
-   可能是因为网络原因，无法通过`oh-my-posh font install`下载字体，最终发现在 oh-my-posh 官网上点击链接，直接下载字体，然后将压缩包中的所有 ttf 字体文件下载放到 Windows 系统的 Fonts 目录下，系统就会自动安装字体!字体的名称就是官网安装教程中的`MesloLGM Nerd Font`[image-20240324200429045](images/image-20240324200429045.png)
+   可能是因为网络原因，无法通过`oh-my-posh font install`下载字体，最终发现在 oh-my-posh 官网上点击链接，直接下载字体，然后将压缩包中的所有 ttf 字体文件下载放到 Windows 系统的 Fonts 目录下，系统就会自动安装字体!字体的名称就是官网安装教程中的`MesloLGM Nerd Font`[字体](https://github.com/ryanoasis/nerd-fonts/releases/download/v3.0.2/Meslo.zip)
 2. 在 VSCode 中配置字体
    需要在 VSCode 中的`settings.json`中添加字体配置代码`"terminal.integrated.fontFamily": "MesloLGM Nerd Font"`
 3. 在 Windows Terminal 中配置字体
@@ -30,7 +30,6 @@
       "segments": [
         {
           "foreground": "#ffafd2",
-          "leading_diamond": "<#00c7fc>\ue285</><#ffafd2></>",
           "properties": {
             "folder_icon": "",
             "folder_separator_icon": "/",
@@ -38,18 +37,24 @@
             "style": "agnoster_full"
           },
           "style": "diamond",
-          "template": " \ue5ff {{ .Path }} ",
+          "template": "\ue5ff {{ .Path }} ",
           "trailing_diamond": "",
           "type": "path"
-        },
+        }
+      ],
+      "type": "prompt"
+    },
+    {
+      "alignment": "left",
+      "newline": true,
+      "segments": [
         {
-          "foreground": "#fff",
           "foreground_templates": ["{{ if gt .Code 0 }}#ef5350{{ end }}"],
           "properties": {
             "always_enabled": true
           },
           "style": "plain",
-          "template": ">",
+          "template": "<#00c7fc>\ue285</><#ffafd2></>",
           "type": "status"
         }
       ],
