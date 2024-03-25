@@ -1,3 +1,15 @@
+---
+title: oh-my-posh配置--更好看的终端外观
+category:
+  - 学习小记
+tag:
+  - oh-my-posh
+
+contributors: false
+editLink: false
+comment: false
+---
+
 # oh-my-posh 配置--更好看的终端外观
 
 折腾 Windows 上的 PowerShell 无意中看到了 oh-my-posh 的这个终端美化应用，在 VSCode 中的显示效果也是极好的
